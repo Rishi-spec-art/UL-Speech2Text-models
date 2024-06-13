@@ -1,6 +1,6 @@
 from keras import backend as K
 from keras.models import Model
-from keras.layers import (BatchNormalization, Conv1D, Dense, Input, TimeDistributed, Activation, Bidirectional, SimpleRNN, GRU, LSTM)
+from keras.layers import (BatchNormalization, Conv1D, Dense, Input, TimeDistributed, Activation, Bidirectional, GRU)
 
 def accent_model(input_dim=13, units=200, recur_layers=2, output_dim=29):
     """ Build a deep network for speech 
